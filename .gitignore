@@ -221,3 +221,4 @@ TSWLatexianTemp*
 
 # compiled files
 *.xdv
+.DS_Store

@@ -1,4 +1,4 @@
-\ProvidesClass{zjureport}
+\ProvidesClass{xjtureport}
 \LoadClass{ctexart}
 \RequirePackage{xeCJK}
 \RequirePackage{CJKnumb}
@@ -14,6 +14,7 @@
 \RequirePackage{float}
 \RequirePackage{indentfirst}
 \RequirePackage{zhnumber}
+\RequirePackage{booktabs}
 
 \linespread{1.2}
 \geometry{top=1in,bottom=1in,left=1in,right=1in}
@@ -82,7 +83,7 @@
 \rhead{学号：\@stuid}
 
 % 下划线定义
-\def\zjuu[#1]#2{
+\def\xjtuu[#1]#2{
   \underline{\hbox to #1{\hfil#2\hfil}}}
 
 % 首页头部
@@ -95,11 +96,11 @@
   \begin{minipage}{.3\linewidth}
     \raggedleft
     \begin{tabular*}{.8\linewidth}{ll}
-      专业： & \zjuu[70pt]\@major   \\
-      姓名： & \zjuu[70pt]\@name    \\
-      学号： & \zjuu[70pt]\@stuid   \\
-      日期： & \zjuu[70pt]\@date \\
-      地点： & \zjuu[70pt]\@lab
+      专业： & \xjtuu[70pt]\@major   \\
+      姓名： & \xjtuu[70pt]\@name    \\
+      学号： & \xjtuu[70pt]\@stuid   \\
+      日期： & \xjtuu[70pt]\@date \\
+      地点： & \xjtuu[70pt]\@lab
     \end{tabular*}
   \end{minipage}
 \end{figure}
@@ -107,8 +108,8 @@
 \begin{table}[!htbp]
   \centering
   \begin{tabular*}{\linewidth}{llllll}
-    课程名称： & \zjuu[150pt]\@course   & 指导老师： & \zjuu[50pt]\@instructor   & 成绩：       &  \zjuu[50pt]\@grades \\
-    实验名称： & \zjuu[150pt]\@expname & 实验类型： &\zjuu[50pt]\@exptype & 同组学生姓名：& \zjuu[50pt]\@partner
+    课程名称： & \xjtuu[150pt]\@course   & 指导老师： & \xjtuu[50pt]\@instructor   & 成绩：       &  \xjtuu[50pt]\@grades \\
+    实验名称： & \xjtuu[150pt]\@expname & 实验类型： &\xjtuu[50pt]\@exptype & 同组学生姓名：& \xjtuu[50pt]\@partner
   \end{tabular*}
 \end{table}
 \thispagestyle{empty}
