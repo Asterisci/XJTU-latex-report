@@ -123,7 +123,7 @@
       \includegraphics[width=0.8\linewidth]{cover}
     \end{center}
     \vspace{1cm}
-    \bfseries\huge{本科实验报告}\\
+    \bfseries\huge{\@title}\\
     \vspace{0.5cm}
     \bfseries\Large{\@expname}
     \vspace{3cm}
