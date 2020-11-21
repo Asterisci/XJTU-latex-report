@@ -100,17 +100,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet pharetra 
 
 Etiam in bibendum arcu. Etiam porta metus ligula. Cras tempor, leo vel faucibus consequat, diam justo malesuada ex, et pretium risus est sit amet lectus. In sit amet efficitur quam. Maecenas quis molestie odio, et consectetur augue. Mauris erat erat, tristique a nunc in, molestie molestie lectus. Nullam commodo ornare urna, vel tincidunt libero aliquam ut. Ut hendrerit nunc id sapien tristique mollis. Aenean maximus, neque molestie dignissim cursus, augue neque dictum purus, vitae varius diam ex vitae est. Nulla bibendum facilisis semper. Nulla placerat ultricies lorem, quis consequat metus pulvinar eu. Morbi sed massa arcu. Nulla sagittis felis a suscipit elementum.
 
-\begin{center}
-    \begin{tabular}{lc}
-        \toprule
-        反应体系2（20ul） & 剂量 \\
-        \midrule
-        无菌蒸馏水        & 14ul \\
-        植物基因组DNA     & 3ul  \\
-        10*buffer         & 2ul  \\
-        HindIII           & 1ul  \\
-        \bottomrule
-    \end{tabular}
-\end{center}
+\begin{table}[!htbp]
+    \begin{center}
+        \begin{tabular}{lllllllll}
+            \toprule
+            时间 & 双蒸水-1 & 双蒸水-2 & 双蒸水-3 & 待测样本-1 & 待测样本-2 & 待测样本-3 & 双蒸水 & 待测样本  \\
+            \midrule
+            20s  & 0.1628 & 0.1666 & 0.1617 & 1.3338 & 1.3826 & 1.3744 & 0.1637 & 1.3636  \\
+            80s  & 0.1630 & 0.1669 & 0.1619 & 1.3626 & 1.4130 & 1.4054 & 0.1639 & 1.3936 \\
+            $\Delta A$  &  &  &  &  &  &  & 0.0002 & 0.0300 \\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+    \caption{吸光度数据}
+    \label{fig:dist}
+\end{table}
 
 \end{document}
