@@ -20,3 +20,7 @@ Simply
 ```bash
 xelatex report.tex
 ```
+
+## Mirror
+
+您也可以访问国内镜像站[gitee](https://gitee.com/chaoers/XJTU-latex-report)来下载相关资源
