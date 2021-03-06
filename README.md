@@ -21,6 +21,10 @@ Simply
 xelatex report.tex
 ```
 
+## Overleaf or no fonts file
+
+If you need use the template in Overleaf or download the needed fonts file, please checkout to the `overleaf` branch.
+
 ## Mirror
 
 您也可以访问国内镜像站[gitee](https://gitee.com/chaoers/XJTU-latex-report)来下载相关资源
