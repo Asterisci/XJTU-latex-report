@@ -13,6 +13,12 @@ A LaTeX template of report in required format for XJTU.
 
 the pdf [demo](./demo.pdf)
 
+## Online template
+
+[Overleaf](https://www.overleaf.com/latex/templates/xjtu-latex-report/rhcsbnktcrrp)
+
+[Latexstudio](https://www.latexstudio.net/index/details/index/ids/1292)
+
 ## Usage
 
 Simply
