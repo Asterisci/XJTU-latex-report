@@ -116,4 +116,51 @@ Etiam in bibendum arcu. Etiam porta metus ligula. Cras tempor, leo vel faucibus 
     \label{fig:dist}
 \end{table}
 
+\includepdf[pages=-]{py.pdf} 
+
+\section{code}
+
+\subsection{Python}
+
+\begin{lstlisting}[language=Python]
+    try:
+    input_arr = list(map(float, input("Please input the hetght(m) and weight(kg) number:").split()))
+    if min(input_arr) < 0:
+        raise Exception("The numbers should more than 0.")
+    if len(input_arr) != 2:
+        raise Exception("Should input 2 numbers")
+except ValueError:
+    print("The input is not number.")
+except Exception as e:
+    print(e)
+else:
+    BMI = input_arr[1] / input_arr[0]**2
+
+    print("Your BMI is {0}".format(round(BMI, 1)))
+
+    if BMI <18.5:
+        print("Your body is Underweight.")
+    elif BMI<23.9:
+        print("Your body is Normal.")
+    elif BMI<27.9:
+        print("Your body is Overweight")
+    else:
+        print("Your body is Obesity.")
+
+\end{lstlisting}
+
+\subsection{R code}
+
+\begin{lstlisting}[language=R]
+    # 绘制图形
+    rmax <- 3
+    # 设置图形分行方式和图形空白边距,并保存原有的方式
+    op <- par(mfrow = c(rmax,1), mar = .1+ c(2,2,2,1))
+    for(r in 1:rmax){
+      tstr <- sprintf("r=%d",r)
+      ricker(0.005, r);title(tstr)
+    }
+    par(op) # 恢复默认图形页面设置
+\end{lstlisting}
+
 \end{document}
