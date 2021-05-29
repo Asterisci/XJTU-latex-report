@@ -15,4 +15,22 @@ The branch is supported overleaf because use local fonts file in `fonts` fold.
 
 ## Online template
 
-The template is push in [overleaf Gallery](https://www.overleaf.com/latex/templates/xjtu-latex-report/rhcsbnktcrrp), you can directly use it.
+[Overleaf](https://www.overleaf.com/latex/templates/xjtu-latex-report/rhcsbnktcrrp)
+
+[Latexstudio](https://www.latexstudio.net/index/details/index/ids/1292)
+
+## Usage
+
+Simply
+
+```bash
+xelatex report.tex
+```
+
+## Overleaf or no fonts file
+
+If you need use the template in Overleaf or download the needed fonts file, please checkout to the `overleaf` branch.
+
+## Mirror
+
+您也可以访问国内镜像站[gitee](https://gitee.com/chaoers/XJTU-latex-report)来下载相关资源

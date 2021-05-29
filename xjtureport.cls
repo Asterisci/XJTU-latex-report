@@ -15,6 +15,10 @@
 \RequirePackage{indentfirst}
 \RequirePackage{zhnumber}
 \RequirePackage{booktabs}
+\RequirePackage{listings}
+\RequirePackage{color}
+\RequirePackage{xcolor}
+\RequirePackage{pdfpages}
 
 \linespread{1.2}
 \geometry{top=1in,bottom=1in,left=1in,right=1in}
@@ -152,3 +156,38 @@
   \thispagestyle{empty}
   \newpage
 }
+
+%Python code
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+%R code
+\lstset{numbers=left,
+        numberstyle=\tiny,
+        keywordstyle=\color{blue},
+        commentstyle=\color[cmyk]{1,0,1,0},
+        frame=single,
+        escapeinside=``,
+        extendedchars=false,
+        xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
+        tabsize=4,
+        showspaces=false
+       }
